@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/02 22:05:07 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/02 22:05:07 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/06/02 22:36:12 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/06/02 22:36:12 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int ch)
+void    *ft_memset(void *str, int c, size_t len)
 {
-    if (ch >= 0 && ch <= 127)
-        return (1);
-    return (0);
+    unsigned char   *ch;
+    int i;
+
+    ch = (unsigned char *)str;
+    i = 0;
+    while (i < len)
+    {
+        ch[i] = (unsigned char)c;
+        i++;
+    }
+    while (ch[i] != '\0')
+        i++;
+    ch[i] = '\0';
+    return (ch);
 }

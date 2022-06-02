@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/02 21:24:16 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/02 21:24:16 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/06/02 21:39:40 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/06/02 21:39:40 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(char *str)
+int ft_strlen(char *str)
 {
-	while (*str)
-	{
-		if (!(((*str >= 'A' && *str <= 'Z')
-				    || (*str >= 'a' && *str <= 'z')) 
-                    || ((*str >= '0') && (*str <= '9'))))
-			return (0);
-		str++;
-	}
-	return (1);
+    int count;
+
+    while (*str)
+    {
+        count++;
+        str++;
+    }
+    return (count);
 }

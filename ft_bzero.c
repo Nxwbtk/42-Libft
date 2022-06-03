@@ -14,12 +14,14 @@
 
 void    ft_bzero(void *s, size_t n)
 {
+    char   *ch;
     size_t    i;
 
+    ch = (char *)s;
     i = 0;
     while (i < n)
     {
-        ((char *)s)[i] = 0;
+        ch[i] = 0;
         i++;
     }
 }
@@ -27,8 +29,8 @@ void    ft_bzero(void *s, size_t n)
 #include <stdio.h>
 int main()
 {
-	void *st = "HelloWorld";
-
+	char *st = "HelloWorld";
+    printf("%s", st);
 	ft_bzero(st,3);
 	printf("%s", st);
 	return (0);

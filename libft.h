@@ -16,6 +16,7 @@ void    ft_bzero(void *s, size_t n);
 int    ft_isalnum(char *str);
 int    ft_isalpha(char *str);
 int    ft_strlen(char *str);
+void    *ft_memset(void *str, int c, size_t len);
 
 
 #endif

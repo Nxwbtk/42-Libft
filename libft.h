@@ -1,35 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/03 02:05:44 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/03 02:05:44 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/06/03 17:12:17 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/06/03 17:12:17 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#ifndef LIBFT_H
+# define LIBFT_H
+# include <stddef.h>
+void    ft_bzero(void *s, size_t n);
+int    ft_isalnum(char *str);
+int    ft_isalpha(char *str);
+int    ft_strlen(char *str);
 
-#include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
-{
-    size_t    i;
-
-    i = 0;
-    while (i < n)
-    {
-        ((char *)s)[i] = 0;
-        i++;
-    }
-}
-
-#include <stdio.h>
-int main()
-{
-	void *st = "HelloWorld";
-
-	ft_bzero(st,3);
-	printf("%s", st);
-	return (0);
-}
+#endif

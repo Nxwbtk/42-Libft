@@ -14,24 +14,16 @@
 
 void    ft_bzero(void *s, size_t n)
 {
-    char   *ch;
+    unsigned char   *ch;
     size_t    i;
 
-    ch = (char *)s;
+    ch = (unsigned char *)s;
     i = 0;
     while (i < n)
     {
-        ch[i] = 0;
+        ch[i] = '\0';
         i++;
     }
-}
-
-#include <stdio.h>
-int main()
-{
-	char *st = "HelloWorld";
-    printf("%s", st);
-	ft_bzero(st,3);
-	printf("%s", st);
-	return (0);
+    while (*ch)
+        i++;
 }

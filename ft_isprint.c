@@ -6,11 +6,11 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 21:55:35 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/02 21:55:35 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/06/04 18:18:41 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(char *str)
+int	ft_isprint(char *str)
 {
 	while (*str)
 	{

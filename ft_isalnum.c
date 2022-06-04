@@ -6,17 +6,17 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 21:24:16 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/02 21:24:16 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/06/04 18:21:46 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(char *str)
+int	ft_isalnum(char *str)
 {
 	while (*str)
 	{
 		if (!(((*str >= 'A' && *str <= 'Z')
-				    || (*str >= 'a' && *str <= 'z')) 
-                    || ((*str >= '0') && (*str <= '9'))))
+					|| (*str >= 'a' && *str <= 'z'))
+				|| ((*str >= '0') && (*str <= '9'))))
 			return (0);
 		str++;
 	}

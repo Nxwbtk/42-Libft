@@ -6,18 +6,18 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 21:39:40 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/02 21:39:40 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/06/04 01:28:54 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-    int count;
+	int	count;
 
-    while (*str)
-    {
-        count++;
-        str++;
-    }
-    return (count);
+	while (*str)
+	{
+			count++;
+			str++;
+	}
+	return (count);
 }

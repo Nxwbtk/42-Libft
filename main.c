@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/04 01:11:40 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/04 01:11:40 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/06/05 16:51:13 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/06/05 23:19:49 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-void	*ft_memmove(void *dest, void *src, size_t n)
+int	main( void )
 {
-	char	*de;
-	char	*sc;
-	size_t	i;
+	int	a;
 
-	de = ((char *)dest);
-	sc = ((char *)src);
-	i = 0;
-	if ((dest == src) || n == 0)
-		return (dest);
+	a = ft_isalpha("ABC");
+	printf("%d\n", a);
 }

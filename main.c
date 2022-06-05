@@ -15,8 +15,8 @@
 
 int	main( void )
 {
-	int	a;
+	char	a[50] = "Hello World";
 
-	a = ft_isalpha("ABC");
-	printf("%d\n", a);
+	ft_memmove(a, a + 6, 5);
+	printf("%s", a);
 }

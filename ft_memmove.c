@@ -18,9 +18,12 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 	char	*sc;
 	size_t	i;
 
-	de = ((char *)dest);
 	sc = ((char *)src);
 	i = 0;
-	if ((dest == src) || n == 0)
-		return (dest);
+	if ((!de && !sc) || n == 0)
+		return (NULL);
+	while (n-- > 0)
+	{
+		((char *)dest)[n] = sc[n];
+	}
 }

@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/05 16:51:13 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/05 23:19:49 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/06/06 05:48:53 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/06/06 05:48:53 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	main( void )
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	char	a[50] = "Hello World";
-	//char	b[50] = " Test";
-	/*
-	ft_strlcat(a, b, 4);
-	printf("%s", a);
-	*/
+	char	*sc;
+	char	*dest;
+	size_t	j;
+	size_t	i;
 
-	printf("%s", ft_strchr(a, 'o'));
+	i = 0;
+	j = ft_strlen(dst);
+	sc = ((char *)src);
+	dest = ((char *)dst);
+	while (i < size)
+	{
+		dest[j + 1] = sc[i];
+		i++;
+		j++;
+	}
 }

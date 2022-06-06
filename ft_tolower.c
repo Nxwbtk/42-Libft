@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/05 16:51:13 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/05 23:19:49 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/06/07 03:54:29 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/06/07 03:54:29 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdio.h>
-
-int	main( void )
+int	ft_tolower(int ch)
 {
-	char	a[50] = "Hello World";
-	//char	b[50] = " Test";
-	/*
-	ft_strlcat(a, b, 4);
-	printf("%s", a);
-	*/
-
-	printf("%s", ft_strchr(a, 'o'));
+	if (!((ch >= 'A') && (ch <= 'Z')))
+		return (ch);
+	return (ch += 32);
 }

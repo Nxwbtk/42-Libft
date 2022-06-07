@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/05 16:51:13 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/05 23:19:49 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/06/08 01:01:29 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/06/08 01:01:29 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 
-int	main( void )
+int	ft_strncmp(char *s1, char *s2, size_t n)
 {
-	char	a[50] = "Hello World";
-	char	b[50] = "aello";
-	/*
-	ft_strlcat(a, b, 4);
-	printf("%s", a);
-	*/
+	size_t	i;
 
-	//printf("%d\n", ft_atoi("-2147483648"));
-	//printf("%d\n", atoi("-2147483648"));
-	printf("%d\n", ft_strncmp(a, b, 3));
-	printf("%d\n", strncmp(a, b, 3));
+	i = 0;
+	while ((s1[i] != '\0' || s2[i] != '\0') && (i < n))
+	{
+		if (s1[i] != s2[i])
+		{
+			return (s1[i] - s2[i]);
+		}
+	i++;
+	}
+	return (0);
 }

@@ -3,24 +3,29 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: bsirikam <bsirikam@student.42.fr>          +#+  +:+       +#+         #
+#    By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/05 23:11:56 by bsirikam          #+#    #+#              #
-#    Updated: 2022/06/05 23:17:18 by bsirikam         ###   ########.fr        #
+#    Updated: 2022/06/08 01:47:00 by bsirikam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRC = main.c ft_isalpha.c
+SRC = ft_isalpha.c
+OBJ = $(SRC:.c-.o)
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
 
-$(NAME):
-	gcc -o $(NAME) $(SRC)
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 
 clean:
-	/bin/rm -f *.o
+	rm -f $(OBJ)
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	rm -f $(NAME)
+
+re: fclean all

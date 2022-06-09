@@ -15,17 +15,27 @@
 #include <string.h>
 #include <stdlib.h>
 
+int     main(void)
+{
+char    a[] = "Hello";
+char    b[] = "TESTsadasdda";
+
+printf("%lu\n", ft_strlcat(a, b, 9));
+printf("%s", a);
+
+}
+/*
 int	main( void )
 {
-	char	a[50] = "Hello World";
-	char	b[50] = "aello";
-	/*
+	char	a[50] = "Hello";
+	char	b[50] = "123456789";
+	
 	ft_strlcat(a, b, 4);
 	printf("%s", a);
-	*/
+	
 
 	//printf("%d\n", ft_atoi("-2147483648"));
 	//printf("%d\n", atoi("-2147483648"));
-	printf("%d\n", ft_strncmp(a, b, 3));
-	printf("%d\n", strncmp(a, b, 3));
-}
+	//printf("%d\n", ft_strncmp(a, b, 3));
+	printf("%lu\n", strlcat(a, b, 3));
+} */

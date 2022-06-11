@@ -17,11 +17,10 @@
 
 int     main(void)
 {
-char    a[] = "Hello";
+char    a[] = "ASDSDASadsddsd";
 char    b[] = "TESTsadasdda";
 
-printf("%lu\n", ft_strlcat(a, b, 9));
-printf("%s", a);
+printf("%s\n", ft_strchr(a, 'a'));
 
 }
 /*

@@ -20,7 +20,7 @@ int     main(void)
 char    a[] = "ASDSDASadsddsd";
 char    b[] = "TESTsadasdda";
 
-printf("%s\n", ft_strchr(a, 'a'));
+printf("%s\n", strchr(a, 'a'));
 
 }
 /*

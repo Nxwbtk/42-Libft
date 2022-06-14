@@ -17,15 +17,15 @@
 
 int     main(void)
 {
-char    a[] = "ASDSDASadsddsd";
-char    b[] = "TESTsadasdda";
-
-printf("%s\n", strchr(a, 'a'));
-
+	printf("%d", ft_isalnum('B'));
 }
 /*
 int	main( void )
 {
+	char    a[] = "ASDSDASadsddsd";
+	char    b[] = "TESTsadasdda";
+
+	printf("%s\n", strchr(a, 'a'));
 	char	a[50] = "Hello";
 	char	b[50] = "123456789";
 	

@@ -10,15 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char *str)
+#include "libft.h"
+
+int	ft_isalnum(int c)
 {
-	while (*str)
-	{
-		if (!(((*str >= 'A' && *str <= 'Z')
-					|| (*str >= 'a' && *str <= 'z'))
-				|| ((*str >= '0') && (*str <= '9'))))
-			return (0);
-		str++;
-	}
+	if (!(((c >= 'A' && c <= 'Z')
+				|| (c >= 'a' && c <= 'z'))
+			|| ((c >= '0') && (c <= '9'))))
+		return (0);
 	return (1);
 }

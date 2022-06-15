@@ -17,13 +17,11 @@ void	ft_bzero(void *s, size_t n)
 	unsigned char	*ch;
 	size_t			i;
 
-	ch = (signed char *)s;
+	ch = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
 		ch[i] = '\0';
 		i++;
 	}
-	while (*ch)
-		i++;
 }

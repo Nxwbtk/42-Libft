@@ -16,15 +16,14 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 {
 	char	*de;
 	char	*sc;
-	size_t	i;
 
 	sc = ((char *)src);
 	de = ((char *)dest);
-	i = 0;
 	if ((!de && !sc) || n == 0)
 		return (NULL);
 	while (n-- > 0)
 	{
 		de[n] = sc[n];
 	}
+	return (de);
 }

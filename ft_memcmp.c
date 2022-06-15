@@ -12,18 +12,7 @@
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
-{
-	if (s1 == s2)
-		return (0);
-	return (1);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	a[50] = "TEST";
-	char	b[50] = "TEST";
-	printf("%d", ft_memcmp(a,b,3));
-}
+// int	ft_memcmp(const void *s1, const void *s2, size_t n)
+// {
+// 	return (0);
+// }

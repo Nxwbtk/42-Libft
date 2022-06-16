@@ -6,7 +6,7 @@
 #    By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/05 23:11:56 by bsirikam          #+#    #+#              #
-#    Updated: 2022/06/15 14:54:44 by bsirikam         ###   ########.fr        #
+#    Updated: 2022/06/16 21:36:10 by bsirikam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,9 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
+
+norm:
+	norminette
 
 re: fclean all
 

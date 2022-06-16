@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'ft_isalpha.o', needed by 'libft.a'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,16 +8,16 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 15 11:48:26 2022
+# Make data base, printed on Thu Jun 16 21:36:39 2022
 
 # Variables
 
-# makefile (from 'Makefile', line 16)
-OBJ = $(SRC:.c-.o)
+# makefile (from 'Makefile', line 19)
+OBJ = $(SRC:.c=.o)
 # environment
 LC_ALL = C
 # makefile (from 'Makefile', line 15)
-SRC = ft_isalpha.c
+SRC = ft_isalpha.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_tolower.c ft_toupper.c ft_strncmp.c ft_memmove.c ft_memcmp.c
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -61,7 +63,7 @@ CURDIR := /mnt/c/Users/news_/42Cadet/Libft
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
@@ -107,15 +109,17 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/bsirikam/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/bsirikam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/PowerShell/7:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Python39/Scripts/:/mnt/c/Python39/:/mnt/c/Program Files/Python38/Scripts/:/mnt/c/Program Files/Python38/:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/TDM-GCC-64/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Java/jdk-18/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/news_/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/news_/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/news_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/news_/AppData/Roaming/npm:/mnt/c/Users/news_/AppData/Local/atom/bin:/mnt/c/Users/news_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/news_/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+PATH = /home/bsirikam/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/bsirikam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/PowerShell/7:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Python39/Scripts/:/mnt/c/Python39/:/mnt/c/Program Files/Python38/Scripts/:/mnt/c/Program Files/Python38/:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/TDM-GCC-64/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Java/jdk-18/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/news_/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/news_/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/news_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/news_/AppData/Roaming/npm:/mnt/c/Users/news_/AppData/Local/atom/bin:/mnt/c/Users/news_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/news_/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
 # default
 MAKEFILES := 
+# environment
+MOTD_SHOWN = update-motd
 # automatic
 ^F = $(notdir $^)
-# makefile (from 'Makefile', line 19)
+# makefile (from 'Makefile', line 22)
 HEADER = libft.h
 # environment
-WT_SESSION = eacb1a90-dc5c-4e9d-9b65-98ec0928c3c3
+WT_SESSION = 2f4528b6-9da6-4a2b-a13f-6676ceff4a08
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -131,7 +135,7 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # automatic
 +F = $(notdir $+)
 # environment
-WSL_INTEROP = /run/WSL/85_interop
+WSL_INTEROP = /run/WSL/8_interop
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -154,10 +158,10 @@ HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 _ = /mnt/c/Users/news_/AppData/Local/Programs/Microsoft VS Code/bin/code
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
-# makefile (from 'Makefile', line 18)
+# makefile (from 'Makefile', line 21)
 CFLAGS = -Wall -Werror -Wextra
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-c6c79533-750d-4ffc-a04c-3b7c8887e648.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-560ff11e-0f51-4b5a-b0f2-0517bc346149.sock
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -174,10 +178,10 @@ SUFFIXES :=
 WSL_DISTRO_NAME = Ubuntu
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
-# makefile (from 'Makefile', line 17)
+# makefile (from 'Makefile', line 20)
 CC = gcc
 # variable set hash-table stats:
-# Load=83/1024=8%, Rehash=0, Collisions=9/125=7%
+# Load=84/1024=8%, Rehash=0, Collisions=10/119=8%
 
 # Pattern-specific Variable Values
 
@@ -195,47 +199,82 @@ CC = gcc
 
 # Files
 
-libft.a: libft.h
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
+# Not a target:
+ft_isalpha.o:
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := libft.a
-# automatic
-# * := 
-# automatic
-# < := libft.h
-# automatic
-# + := libft.h
-# automatic
-# % := 
-# automatic
-# ^ := libft.h
-# automatic
-# ? := libft.h
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/14=7%
-#  recipe to execute (from 'Makefile', line 24):
+#  File has not been updated.
+
+# Not a target:
+ft_strchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isprint.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libft.a: ft_isalpha.o ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memset.o ft_strchr.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_tolower.o ft_toupper.o ft_strncmp.o ft_memmove.o ft_memcmp.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
 	@ar rcs $(NAME) $(OBJ)
+
+# Not a target:
+ft_toupper.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isalnum.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-11 23:29:50.3429674
+#  Last modified 2022-06-16 21:36:10.2088542
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+ft_strlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 27):
+#  recipe to execute (from 'Makefile', line 30):
 	@rm -f $(OBJ)
+
+# Not a target:
+ft_memset.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isascii.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_memcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
 
 re: fclean all
 #  Phony target (prerequisite of .PHONY).
@@ -244,11 +283,22 @@ re: fclean all
 #  File has not been updated.
 
 # Not a target:
-libft.h:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-14 22:19:58.5796403
-#  File has been updated.
-#  Successfully updated.
+ft_bzero.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isdigit.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strlcat.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -261,22 +311,55 @@ all: libft.a
 #  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+#  File has not been updated.
 
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 30):
- 
+#  recipe to execute (from 'Makefile', line 33):
 	@rm -f $(NAME)
 
 # Not a target:
-.SUFFIXES:
+ft_memmove.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_atoi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strlcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_calloc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_memcmp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+norm:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 36):
+	norminette
+
+# Not a target:
+ft_strncmp.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -286,20 +369,26 @@ fclean: clean
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+ft_tolower.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/32=0%
+# Load=29/1024=3%, Rehash=0, Collisions=0/69=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 40 / storage = 441 B / avg = 11 B
-# current buf: size = 8162 B / used = 441 B / count = 40 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 60 / storage = 682 B / avg = 11 B
+# current buf: size = 8162 B / used = 682 B / count = 60 / avg = 11 B
 
-# strcache performance: lookups = 60 / hit rate = 33%
+# strcache performance: lookups = 80 / hit rate = 25%
 # hash-table stats:
-# Load=40/8192=0%, Rehash=0, Collisions=0/60=0%
-# Finished Make data base on Wed Jun 15 11:48:26 2022
+# Load=60/8192=1%, Rehash=0, Collisions=0/80=0%
+# Finished Make data base on Thu Jun 16 21:36:39 2022
 
  

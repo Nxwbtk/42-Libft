@@ -22,20 +22,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	result = 0;
 	i = 0;
-	while (!src || !dst)
-		return (0);
 	sc = ((char *)src);
 	d_len = ft_strlen(dst);
 	sc_len = ft_strlen(sc);
-	if (size == 0 || d_len > size)
-		return (0);
+	if (size > d_len)
+		result = sc_len + d_len;
+	else
+		result = sc_len + size;
 	while (d_len < size)
 	{
 		dst[d_len] = sc[i];
 		d_len++;
 		i++;
 	}
-		dst[d_len] = '\0';
-		result = d_len + sc_len;
+	dst[d_len] = '\0';
 	return (result);
 }

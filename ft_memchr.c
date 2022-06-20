@@ -1,24 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/15 19:36:40 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/20 23:25:38 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/06/20 21:03:32 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/06/21 00:10:01 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
-#include <unistd.h>
 
-int	main(void)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char s[] = {0, 1, 2 ,3 ,4 ,5};
-	printf("%s", ft_memchr(s, 6, 6));
-	return (0);
+	size_t			i;
+	unsigned char	*sc;
+	unsigned char	ch;
+
+	sc = ((unsigned char *)s);
+	ch = ((unsigned char)c);
+	i = 0;
+	while (i < n)
+	{
+		if (*sc != ch)
+			sc++;
+		else
+			return (sc);
+	}
+	return (NULL);
 }

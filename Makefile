@@ -6,7 +6,7 @@
 #    By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/05 23:11:56 by bsirikam          #+#    #+#              #
-#    Updated: 2022/06/16 21:36:10 by bsirikam         ###   ########.fr        #
+#    Updated: 2022/06/20 15:24:20 by bsirikam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,10 @@ fclean: clean
 
 norm:
 	norminette
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)
 
 re: fclean all
 

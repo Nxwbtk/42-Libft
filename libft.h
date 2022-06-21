@@ -25,6 +25,7 @@ int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int ch);
 int		ft_atoi(const char *chnb);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strncmp(char *s1, char *s2, size_t n);
 void	*ft_memset(void *str, int c, size_t len);
 void	*ft_memcpy(void *dest, const void *src, size_t n);

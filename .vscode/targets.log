@@ -8,7 +8,7 @@ make: *** No rule to make target 'ft_isalpha.o', needed by 'libft.a'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 21 21:28:10 2022
+# Make data base, printed on Wed Jun 22 01:06:38 2022
 
 # Variables
 
@@ -109,7 +109,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/bsirikam/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/bsirikam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/PowerShell/7:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Python39/Scripts/:/mnt/c/Python39/:/mnt/c/Program Files/Python38/Scripts/:/mnt/c/Program Files/Python38/:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/TDM-GCC-64/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Java/jdk-18/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/news_/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/news_/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/news_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/news_/AppData/Roaming/npm:/mnt/c/Users/news_/AppData/Local/atom/bin:/mnt/c/Users/news_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/news_/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+PATH = /home/bsirikam/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/bsirikam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/PowerShell/7:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Python39/Scripts/:/mnt/c/Python39/:/mnt/c/Program Files/Python38/Scripts/:/mnt/c/Program Files/Python38/:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/TDM-GCC-64/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Java/jdk-18/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/news_/scoop/apps/gcc/current/bin:/mnt/c/Users/news_/scoop/shims:/mnt/c/Users/news_/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/news_/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/news_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/news_/AppData/Roaming/npm:/mnt/c/Users/news_/AppData/Local/atom/bin:/mnt/c/Users/news_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/news_/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
 # default
 MAKEFILES := 
 # environment
@@ -119,7 +119,7 @@ MOTD_SHOWN = update-motd
 # makefile (from 'Makefile', line 22)
 HEADER = libft.h
 # environment
-WT_SESSION = 6737511d-6712-47c6-8344-f99b9ff623a5
+WT_SESSION = db5b1a81-9a21-4897-9d81-79c1b7c076f9
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -161,7 +161,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # makefile (from 'Makefile', line 21)
 CFLAGS = -Wall -Werror -Wextra
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-48694652-1d1a-43c0-a087-ab356486f0d0.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-79e5dc75-2b51-4870-b7b3-c620541ad21b.sock
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -409,6 +409,6 @@ ft_memchr.o:
 # strcache performance: lookups = 87 / hit rate = 24%
 # hash-table stats:
 # Load=66/8192=1%, Rehash=0, Collisions=0/87=0%
-# Finished Make data base on Tue Jun 21 21:28:10 2022
+# Finished Make data base on Wed Jun 22 01:06:38 2022
 
  

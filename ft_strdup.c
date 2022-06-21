@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/15 19:36:40 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/21 22:07:46 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/06/21 18:02:13 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/06/21 21:36:38 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
-#include <unistd.h>
 
-int	main(void)
+char	*ft_strdup(const char *s)
 {
-	char	dest[90] = "Heeello";
+	char	*sc;
+	size_t	s_len;
+	size_t	i;
 
-	printf("%s", ft_strrchr(dest, 'e'));
-	return (0);
+	s_len = ft_strlen(s);
+	i = 0;
+	sc = malloc(sizeof(char) * s_len + 1);
+	if (sc == NULL)
+		return (NULL);
+	while (s[i])
+	{
+		sc[i] = s[i];
+		i++;
+	}
+	sc[i] = '\0';
+	return (sc);
 }

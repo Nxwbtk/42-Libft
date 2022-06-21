@@ -8,7 +8,7 @@ make: *** No rule to make target 'ft_isalpha.o', needed by 'libft.a'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 21 15:10:48 2022
+# Make data base, printed on Tue Jun 21 21:28:10 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ OBJ = $(SRC:.c=.o)
 # environment
 LC_ALL = C
 # makefile (from 'Makefile', line 15)
-SRC = ft_isalpha.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_tolower.c ft_toupper.c ft_strncmp.c ft_memmove.c ft_memcmp.c ft_memchr.c
+SRC = ft_isalpha.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_tolower.c ft_toupper.c ft_strncmp.c ft_memmove.c ft_memcmp.c ft_memchr.c ft_strdup.c
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -217,7 +217,7 @@ ft_isprint.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-libft.a: ft_isalpha.o ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memset.o ft_strchr.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_tolower.o ft_toupper.o ft_strncmp.o ft_memmove.o ft_memcmp.o ft_memchr.o
+libft.a: ft_isalpha.o ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memset.o ft_strchr.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_tolower.o ft_toupper.o ft_strncmp.o ft_memmove.o ft_memcmp.o ft_memchr.o ft_strdup.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
@@ -247,12 +247,18 @@ so:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-21 15:10:46.2362794
+#  Last modified 2022-06-21 21:28:06.5819848
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 ft_strlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strdup.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -268,13 +274,13 @@ clean:
 # Not a target:
 ft_memset.o:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
 ft_isascii.o:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -390,19 +396,19 @@ ft_memchr.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=31/1024=3%, Rehash=0, Collisions=0/72=0%
+# Load=32/1024=3%, Rehash=0, Collisions=0/74=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 65 / storage = 733 B / avg = 11 B
-# current buf: size = 8162 B / used = 733 B / count = 65 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 66 / storage = 751 B / avg = 11 B
+# current buf: size = 8162 B / used = 751 B / count = 66 / avg = 11 B
 
-# strcache performance: lookups = 86 / hit rate = 24%
+# strcache performance: lookups = 87 / hit rate = 24%
 # hash-table stats:
-# Load=65/8192=1%, Rehash=0, Collisions=0/86=0%
-# Finished Make data base on Tue Jun 21 15:10:48 2022
+# Load=66/8192=1%, Rehash=0, Collisions=0/87=0%
+# Finished Make data base on Tue Jun 21 21:28:10 2022
 
  

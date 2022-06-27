@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/15 19:36:40 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/22 21:35:49 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/06/22 21:47:47 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/06/23 15:36:14 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
-#include <unistd.h>
+
+char	*ft_strnstr(const char *big, const char *little, size_t len)
+{
+	size_t	i;
+
+	i = 0;
+	if (!little)
+		return (big);
+	while (/* condition */)
+	{
+		/* code */
+	}
+	return (0);
+}
 
 int	main(void)
 {
-	char	*dest = "tripouille";
+	char	big[50] = "Hello";
+	char	small[50] = "";
 
-	//printf("%s\n", &dest[1]);
-	printf("%s\n", ft_strrchr(dest, 't'));
-	return (0);
+	printf("%s", ft_strnstr(big, small, 5));
 }

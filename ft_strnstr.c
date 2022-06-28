@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 21:47:47 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/23 15:36:14 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/06/28 14:50:10 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,14 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t	i;
-
-	i = 0;
-	if (!little)
-		return (big);
-	while (/* condition */)
+	if (!*little)
+		return ((char *)big);
+	while (*big && len > 0)
 	{
-		/* code */
+		if (ft_strncmp((char *)big, (char *)little, len) == 0)
+			return ((char *)big);
+		big++;
+		len--;
 	}
 	return (0);
-}
-
-int	main(void)
-{
-	char	big[50] = "Hello";
-	char	small[50] = "";
-
-	printf("%s", ft_strnstr(big, small, 5));
 }

@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 19:36:40 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/29 18:41:57 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/06/29 18:55:15 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,5 @@ int	main(void)
 	printf("%c\n", dest[0]);
 	printf("%c\n", dest[1]);
 	printf("%c\n", dest[2]);
+	printf("%s\n", dest);
 }

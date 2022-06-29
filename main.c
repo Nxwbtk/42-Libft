@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 19:36:40 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/28 15:36:23 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/06/29 18:41:57 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,11 @@
 
 int	main(void)
 {
-	char	*dest;
-	int		arg;
-
-	alarm(5);
-	dest = ((char *)malloc(sizeof(*dest) * 15));
-	memset(dest, 0, 15);
-	memset(dest, 'r', 6);
-	dest[11] = 'a';
-	printf("%lu", strlcpy(dest, "lorem", 15));
+	char src[] = "coucou";
+	char dest[10];
+	memset(dest, 'A', 10);
+	printf("%lu\n", ft_strlcpy(dest, src, 2));
+	printf("%c\n", dest[0]);
+	printf("%c\n", dest[1]);
+	printf("%c\n", dest[2]);
 }

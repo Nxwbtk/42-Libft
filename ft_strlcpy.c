@@ -21,9 +21,12 @@ size_t	ft_strlcpy(char *dest, char *src, size_t n)
 	s_len = ft_strlen(src);
 	if (n == 0)
 		return (s_len);
-	if (!dest || !src)
+	if (!*dest || !*src)
+	{
+		dest[0] = '\0';
 		return (0);
-	while (dest[i] && src[i] && i < n - 1)
+	}
+	while (i < n - 1 && src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;

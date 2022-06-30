@@ -8,7 +8,7 @@ make: *** No rule to make target 'ft_isalpha.o', needed by 'libft.a'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 29 21:00:29 2022
+# Make data base, printed on Thu Jun 30 20:30:38 2022
 
 # Variables
 
@@ -63,7 +63,7 @@ CURDIR := /mnt/c/Users/news_/42Cadet/Libft
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
@@ -117,7 +117,7 @@ MAKEFILES :=
 # makefile (from 'Makefile', line 22)
 HEADER = libft.h
 # environment
-WT_SESSION = b95ba104-138d-4833-8405-cbb7035d2f73
+WT_SESSION = e4edb944-a799-44c6-b21b-e6c12f32c158
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -159,7 +159,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # makefile (from 'Makefile', line 21)
 CFLAGS = -Wall -Werror -Wextra
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-fe81899c-7036-4d3f-b640-e536c9e20d03.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-c91d9194-8d61-4ecd-91c0-33c560864028.sock
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -187,9 +187,9 @@ CC = gcc
 
 # Directories
 
-# . (device 73, inode 41939771530209803): 34 files, no impossibilities.
+# . (device 73, inode 41939771530209803): 33 files, no impossibilities.
 
-# 34 files, no impossibilities in 1 directories.
+# 33 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -413,12 +413,12 @@ ft_memchr.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 70 / storage = 796 B / avg = 11 B
-# current buf: size = 8162 B / used = 796 B / count = 70 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 69 / storage = 790 B / avg = 11 B
+# current buf: size = 8162 B / used = 790 B / count = 69 / avg = 11 B
 
-# strcache performance: lookups = 91 / hit rate = 23%
+# strcache performance: lookups = 90 / hit rate = 23%
 # hash-table stats:
-# Load=70/8192=1%, Rehash=0, Collisions=0/91=0%
-# Finished Make data base on Wed Jun 29 21:00:29 2022
+# Load=69/8192=1%, Rehash=0, Collisions=0/90=0%
+# Finished Make data base on Thu Jun 30 20:30:38 2022
 
  

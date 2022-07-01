@@ -8,7 +8,7 @@ make: *** No rule to make target 'ft_isalpha.o', needed by 'libft.a'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun 30 20:30:38 2022
+# Make data base, printed on Fri Jul  1 18:15:47 2022
 
 # Variables
 
@@ -37,7 +37,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /mnt/c/Users/news_/42Cadet/Libft
+PWD = /mnt/c/Users/news_/42Cursus/Libft
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -59,7 +59,7 @@ HOMEBREW_REPOSITORY = /home/linuxbrew/.linuxbrew/Homebrew
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /mnt/c/Users/news_/42Cadet/Libft
+CURDIR := /mnt/c/Users/news_/42Cursus/Libft
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -117,7 +117,7 @@ MAKEFILES :=
 # makefile (from 'Makefile', line 22)
 HEADER = libft.h
 # environment
-WT_SESSION = e4edb944-a799-44c6-b21b-e6c12f32c158
+WT_SESSION = 7a86073a-2bb3-49c6-bee8-7eafbe1798a9
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -159,7 +159,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # makefile (from 'Makefile', line 21)
 CFLAGS = -Wall -Werror -Wextra
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-c91d9194-8d61-4ecd-91c0-33c560864028.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-d73e38fd-21ca-4d12-a076-127dbded4393.sock
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -419,6 +419,6 @@ ft_memchr.o:
 # strcache performance: lookups = 90 / hit rate = 23%
 # hash-table stats:
 # Load=69/8192=1%, Rehash=0, Collisions=0/90=0%
-# Finished Make data base on Thu Jun 30 20:30:38 2022
+# Finished Make data base on Fri Jul  1 18:15:47 2022
 
  

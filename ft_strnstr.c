@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 21:47:47 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/04 15:54:47 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/07/04 23:36:13 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		len--;
 	}
 	return (0);
+}
+
+#include <string.h>
+int	main(void)
+{
+	printf("%s\n", strnstr("lorem ipsum dolor sit amet", "lorem", 15));
 }

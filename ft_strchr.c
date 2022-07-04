@@ -15,10 +15,15 @@
 char	*ft_strchr(const char *s, int c)
 {
 	char	*src;
+	size_t	s_len;
 
 	src = ((char *)s);
+	s_len = ft_strlen(src);
 	if (c == '\0' || *src == '\0')
-		return (src);
+	{
+		ft_bzero(src, s_len);
+		return (src + s_len);
+	}
 	while (*src)
 	{
 		if (*src == c)

@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 21:47:47 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/28 14:50:10 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/07/04 15:54:47 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	if (!*little)
+	if (*little == '\0' || big == little)
 		return ((char *)big);
 	while (*big && len > 0)
 	{

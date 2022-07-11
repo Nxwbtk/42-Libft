@@ -1,36 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/22 21:47:47 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/10 21:17:47 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/07/05 09:10:21 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/07/05 10:34:59 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
-	char	*s;
-	char	*d;
-	char	*res;
+	unsigned char	*src;
+	char			*str_ptr;
+	size_t			i;
+	size_t			slen;
 
 	i = 0;
-	if (!*needle || !*haystack)
-		return ((char *)haystack);
-	s = (char *)haystack;
-	d = (char *)needle;
-	while (*s)
+	str_ptr = malloc(len + 1);
+	slen = ft_strlen(s);
+	if (!str_ptr || start == '\0')
 	{
-		if (*s == *d && i < len)
-		{
-			return (s);
-		}
-		s++;
+		ft_bzero(s, slen);
+		return (str_ptr);
 	}
-	return (0);
+	src = (unsigned char *)s;
+	while (*src)
+	{
+		if (*src == start)
+		{
+			while (i < len)
+			{
+				str_ptr[i] = src[i];
+				i++;
+			}
+		}
+		src++;
+	}
+	return (str_ptr);
 }

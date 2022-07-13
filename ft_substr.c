@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 09:10:21 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/05 10:34:59 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/07/13 19:55:54 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,31 +14,20 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned char	*src;
-	char			*str_ptr;
-	size_t			i;
-	size_t			slen;
+	size_t	i;
+	char	*res;
+	char	*sc;
 
+	res = malloc(len + 1);
+	if (res == NULL)
+		return (NULL);
+	sc = (char *)s;
 	i = 0;
-	str_ptr = malloc(len + 1);
-	slen = ft_strlen(s);
-	if (!str_ptr || start == '\0')
+	while (sc[start + i] && i < len)
 	{
-		ft_bzero(s, slen);
-		return (str_ptr);
+		res[i] = sc[start + i];
+		i++;
 	}
-	src = (unsigned char *)s;
-	while (*src)
-	{
-		if (*src == start)
-		{
-			while (i < len)
-			{
-				str_ptr[i] = src[i];
-				i++;
-			}
-		}
-		src++;
-	}
-	return (str_ptr);
+	res[i] = '\0';
+	return (res);
 }

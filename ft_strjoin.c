@@ -1,34 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/22 21:47:47 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/13 19:06:37 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/07/13 19:57:04 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/07/13 20:47:02 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	i;
 	size_t	j;
+	size_t	s1_len;
+	size_t	s2_len;
+	char	*res;
 
-	if (needle[0] == '\0')
-		return ((char *)haystack);
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	res = malloc(s1_len + s2_len + 1);
 	i = 0;
-	while (haystack[i] != '\0')
+	j = 0;
+	while (s1[i] != '\0')
 	{
-		j = 0;
-		while (haystack[i + j] && needle[j] && haystack[i + j] == needle[j] \
-		&& i + j < len)
-			j++;
-		if (!((char *)needle)[j])
-			return ((char *)haystack + i);
+		res[i] = s1[i];
 		i++;
 	}
-	return (0);
+	while (s2[j] != '\0')
+	{
+		res[i] = s2[j];
+		j++;
+		i++;
+	}
+	res[i] = '\0';
+	return (res);
 }

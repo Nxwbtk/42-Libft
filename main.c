@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 19:36:40 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/13 20:28:41 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/07/13 21:09:34 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ int	main(void)
 	// memset(dest, 'A', 10);
 	// printf("%lu\n", ft_strlcpy(dest, src, 2));
 	// printf("%s\n", dest);
-	printf("%s\n", ft_strjoin("lorem", "ipsum"));
+	printf("%s\n", ft_strtrim("lorem ipsum dolor amet", "ipsum"));
 }

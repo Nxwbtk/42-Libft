@@ -6,13 +6,38 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 20:48:20 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/13 20:49:18 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/07/13 21:36:17 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    
+	char	*res;
+	size_t	sset;
+	size_t	s1_len;
+	size_t	i;
+	size_t	j;
+	size_t	k;
+
+	sset = ft_strlen(set);
+	s1_len = ft_strlen(s1);
+	res = malloc((s1_len - sset) + 1);
+	i = 0;
+	j = 0;
+	k = 0;
+	while (s1[i] != '\0')
+	{
+		while (s1[i] == set[j + i])
+		{
+			i++;
+			j++;
+		}
+		res[k] = s1[i];
+		k++;
+		i++;
+	}
+	res[j] = '\0';
+	return (res);
 }

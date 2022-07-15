@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/buntakansirikamonthip/42Cursus/Libft'
 gcc -Wall -Werror -Wextra   -c -o ft_isalpha.o ft_isalpha.c
 gcc -Wall -Werror -Wextra   -c -o ft_atoi.o ft_atoi.c
@@ -14,6 +14,7 @@ gcc -Wall -Werror -Wextra   -c -o ft_strchr.o ft_strchr.c
 gcc -Wall -Werror -Wextra   -c -o ft_strlcat.o ft_strlcat.c
 gcc -Wall -Werror -Wextra   -c -o ft_strlcpy.o ft_strlcpy.c
 gcc -Wall -Werror -Wextra   -c -o ft_strlen.o ft_strlen.c
+ 
 gcc -Wall -Werror -Wextra   -c -o ft_tolower.o ft_tolower.c
 gcc -Wall -Werror -Wextra   -c -o ft_toupper.o ft_toupper.c
 gcc -Wall -Werror -Wextra   -c -o ft_strncmp.o ft_strncmp.c
@@ -25,6 +26,7 @@ gcc -Wall -Werror -Wextra   -c -o ft_strrchr.o ft_strrchr.c
 gcc -Wall -Werror -Wextra   -c -o ft_strnstr.o ft_strnstr.c
 gcc -Wall -Werror -Wextra   -c -o ft_substr.o ft_substr.c
 gcc -Wall -Werror -Wextra   -c -o ft_strjoin.o ft_strjoin.c
-ar rcs libft.a ft_isalpha.o ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memset.o ft_strchr.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_tolower.o ft_toupper.o ft_strncmp.o ft_memmove.o ft_memcmp.o ft_memchr.o ft_strdup.o ft_strrchr.o ft_strnstr.o ft_substr.o ft_strjoin.o
+gcc -Wall -Werror -Wextra   -c -o ft_strtrim.o ft_strtrim.c
+ar rcs libft.a ft_isalpha.o ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memset.o ft_strchr.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_tolower.o ft_toupper.o ft_strncmp.o ft_memmove.o ft_memcmp.o ft_memchr.o ft_strdup.o ft_strrchr.o ft_strnstr.o ft_substr.o ft_strjoin.o ft_strtrim.o
 make: Leaving directory `/Users/buntakansirikamonthip/42Cursus/Libft'
  

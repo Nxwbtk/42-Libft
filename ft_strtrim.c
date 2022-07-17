@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 20:48:20 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/13 21:36:17 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/07/17 20:35:59 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	j = 0;
 	k = 0;
+	if (set[i] == '\0')
+		return ((char *)s1);
 	while (s1[i] != '\0')
 	{
-		while (s1[i] == set[j + i])
+		while (s1[i] == set[j] && set[j] != '\0')
 		{
 			i++;
 			j++;

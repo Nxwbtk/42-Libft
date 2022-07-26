@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 20:48:20 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/26 02:01:34 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/07/26 14:17:55 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	first = front(s1, set);
 	finish = last(s1, set);
 	size = finish - first + 1;
+	i = 0;
 	if (size == 1)
 	{
 		dest = malloc(sizeof(char) * size);
@@ -53,7 +54,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	else
 	{
-		i = 0;
 		dest = malloc(sizeof(char) * (size + 1));
 		while (i < size)
 			dest[i++] = s1[first++];

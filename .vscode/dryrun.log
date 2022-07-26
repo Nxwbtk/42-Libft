@@ -1,4 +1,4 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/buntakansirikamonthip/42Cursus/Libft'
 gcc -Wall -Werror -Wextra   -c -o ft_isalpha.o ft_isalpha.c
 gcc -Wall -Werror -Wextra   -c -o ft_atoi.o ft_atoi.c
@@ -12,9 +12,9 @@ gcc -Wall -Werror -Wextra   -c -o ft_memcpy.o ft_memcpy.c
 gcc -Wall -Werror -Wextra   -c -o ft_memset.o ft_memset.c
 gcc -Wall -Werror -Wextra   -c -o ft_strchr.o ft_strchr.c
 gcc -Wall -Werror -Wextra   -c -o ft_strlcat.o ft_strlcat.c
+ 
 gcc -Wall -Werror -Wextra   -c -o ft_strlcpy.o ft_strlcpy.c
 gcc -Wall -Werror -Wextra   -c -o ft_strlen.o ft_strlen.c
- 
 gcc -Wall -Werror -Wextra   -c -o ft_tolower.o ft_tolower.c
 gcc -Wall -Werror -Wextra   -c -o ft_toupper.o ft_toupper.c
 gcc -Wall -Werror -Wextra   -c -o ft_strncmp.o ft_strncmp.c

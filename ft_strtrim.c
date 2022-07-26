@@ -6,40 +6,58 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 20:48:20 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/17 20:35:59 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/07/26 02:01:34 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+size_t	front(const char *s1, const char *set)
+{
+	size_t	begin;
+
+	begin = 0;
+	while (s1[begin] && ft_strrchr(set, s1[begin]))
+		begin++;
+	if (begin == ft_strlen(s1))
+		begin = 0;
+	return (begin);
+}
+
+size_t	last(const char *s1, const char *set)
+{
+	size_t	finish;
+
+	finish = ft_strlen(s1);
+	while (ft_strrchr(set, s1[finish]) && finish)
+		finish--;
+	return (finish);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*res;
-	size_t	sset;
-	size_t	s1_len;
+	size_t	first;
+	size_t	finish;
+	size_t	size;
 	size_t	i;
-	size_t	j;
-	size_t	k;
+	char	*dest;
 
-	sset = ft_strlen(set);
-	s1_len = ft_strlen(s1);
-	res = malloc((s1_len - sset) + 1);
-	i = 0;
-	j = 0;
-	k = 0;
-	if (set[i] == '\0')
-		return ((char *)s1);
-	while (s1[i] != '\0')
+	first = front(s1, set);
+	finish = last(s1, set);
+	size = finish - first + 1;
+	if (size == 1)
 	{
-		while (s1[i] == set[j] && set[j] != '\0')
-		{
-			i++;
-			j++;
-		}
-		res[k] = s1[i];
-		k++;
-		i++;
+		dest = malloc(sizeof(char) * size);
+		if (!dest)
+			return (NULL);
 	}
-	res[j] = '\0';
-	return (res);
+	else
+	{
+		i = 0;
+		dest = malloc(sizeof(char) * (size + 1));
+		while (i < size)
+			dest[i++] = s1[first++];
+	}
+	dest[i] = '\0';
+	return (dest);
 }

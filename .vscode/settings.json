@@ -3,6 +3,8 @@
 	"files.associations": {
 		"libft.h": "c",
 		"*.tcc": "c",
-		"stdio.h": "c"
+		"stdio.h": "c",
+		"string_view": "cpp",
+		"type_traits": "cpp"
 	}
 }

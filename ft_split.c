@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/26 21:45:05 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/08/07 18:00:08 by bsirikam         ###   ########.fr       */
+/*   Created: 2022/08/07 18:37:42 by bsirikam          #+#    #+#             */
+/*   Updated: 2022/08/07 19:01:02 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,16 @@
 int	word_count(char const *s, char c)
 {
 	int	count;
-	int	i;
 
-	i = 0;
 	count = 0;
-	while (s[i])
+	while (*s)
 	{
-		if (s[i] == c)
-			i++;
+		if (*s == c && *s)
+			s++;
 		else
 		{
-			while (s[i] != c)
-				i++;
+			while (*s != c && *s)
+				s++;
 			count++;
 		}
 	}
@@ -40,8 +38,6 @@ int	word_len(char const *s, char c)
 
 	count = 0;
 	i = 0;
-	
-	// printf("%s\n", s);
 	while (s[i] != c && s[i])
 	{
 		count++;
@@ -57,9 +53,7 @@ char	*let_split(char const *s, char c, char **split, int i)
 
 	while (*s == c)
 			s++;
-	printf("test\n");
 	wlen = word_len(s, c);
-	// printf("asdasd\n");
 	split[i] = (char *)malloc(sizeof(char) * (wlen + 1));
 	if (!(split[i]))
 		return (0);
@@ -81,9 +75,7 @@ char	**ft_split(char const *s, char c)
 	int		i;
 
 	i = 0;
-	printf("test\n");
 	count = word_count(s, c);
-	// printf("%d\n", count);
 	split = (char **)malloc(sizeof(char *) * (count + 1));
 	if (!split)
 		return (0);
@@ -98,17 +90,3 @@ char	**ft_split(char const *s, char c)
 	split[count] = NULL;
 	return (split);
 }
-
-// int	main(void)
-// {
-// 	int i = 0;
-// 	char * * tab = ft_split("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse", ' ');
-// 	printf("%lu\n", sizeof(tab));
-// 	while (tab[i])
-// 	{
-// 		printf("|%s|\n", tab[i++]);
-// 	}
-// 	printf("|%s|\n", tab[i]);
-	
-// 	// printf("|%s|\n", tab[1]);
-// }

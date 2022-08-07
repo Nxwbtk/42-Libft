@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `ft_isalpha.o', needed by `libft.a'.  Stop.
 
 
-# Make data base, printed on Sat Jul 30 00:34:00 2022
+# Make data base, printed on Sat Aug  6 21:24:08 2022
 
 # Variables
 
@@ -20,10 +20,11 @@ make: *** No rule to make target `ft_isalpha.o', needed by `libft.a'.  Stop.
 ?F = $(notdir $?)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
+ 
 # makefile (from `Makefile', line 24)
 OBJ = $(SRC:.c=.o)
 # makefile (from `Makefile', line 15)
-SRC = ft_isalpha.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_tolower.c ft_toupper.c ft_strncmp.c ft_memmove.c ft_memcmp.c ft_memchr.c ft_strdup.c ft_strrchr.c ft_strnstr.c ft_substr.c ft_strjoin.c ft_strtrim.c 
+SRC = ft_isalpha.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_tolower.c ft_toupper.c ft_strncmp.c ft_memmove.c ft_memcmp.c ft_memchr.c ft_strdup.c ft_strrchr.c ft_strnstr.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c
 # environment
 LC_CTYPE = UTF-8
 # environment
@@ -53,14 +54,13 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/kp/c7d0j08n3mjgyphnqsw6dkrr0000gn/T/vscode-ipc-254cddab-0a4f-4153-9ca7-fc137de59e81.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/kp/c7d0j08n3mjgyphnqsw6dkrr0000gn/T/vscode-ipc-07b2b033-c46e-4cca-bd99-9bac5ef5637a.sock
 # environment
- 
 VSCODE_CWD = /Users/buntakansirikamonthip/42Cursus/Libft
 # environment
 PATH = /opt/homebrew/opt/python@3.10/bin:/opt/homebrew/opt/python@3.10/bin:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # environment
-LaunchInstanceID = E7F0A133-1BFA-46D8-928B-4EB6E6C2B55F
+LaunchInstanceID = 86DD9E41-1C2F-4425-970F-390FD0E61686
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -68,7 +68,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Wbs7x82fsN/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.2ZwUIeWWVA/Listeners
 # automatic
 %F = $(notdir $%)
 # makefile (from `Makefile', line 21)
@@ -120,6 +120,7 @@ USER = buntakansirikamonthip
 # makefile
 .DEFAULT_GOAL := all
 # default
+ 
 MAKECMDGOALS := all
 # environment
 TERM_SESSION_ID = w0t0p0:EE05811B-B4B6-4DA7-B1EF-E887C6020380
@@ -142,14 +143,13 @@ VSCODE_IPC_HOOK = /Users/buntakansirikamonthip/Library/Application Support/Code/
 # makefile
 MAKEFLAGS = Rrqp
 # environment
- 
 MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
 TERM_PROGRAM_VERSION = 3.4.16
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.691651.691657.167553F2-4C58-4C70-9B70-1D7A4202BDE2
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.691651.691657.894CC8D1-DF4D-4080-91EA-CA8860B63831
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -193,7 +193,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 1034
+VSCODE_PID = 1069
 # variable set hash-table stats:
 # Load=89/1024=9%, Rehash=0, Collisions=6/118=5%
 
@@ -203,9 +203,9 @@ VSCODE_PID = 1034
 
 # Directories
 
-# . (device 16777231, inode 694719): 47 files, no impossibilities.
+# . (device 16777234, inode 694719): 48 files, no impossibilities.
 
-# 47 files, no impossibilities in 1 directories.
+# 48 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -258,6 +258,7 @@ ft_memchr.o:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 .PHONY: clean fclean re all bonus
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -277,6 +278,12 @@ ft_strrchr.o:
 
 # Not a target:
 ft_strjoin.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_split.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -302,7 +309,7 @@ ft_strlcat.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-30 00:33:36
+#  Last modified 2022-08-06 21:23:32
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -314,7 +321,7 @@ ft_isprint.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-libft.a: ft_isalpha.o ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memset.o ft_strchr.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_tolower.o ft_toupper.o ft_strncmp.o ft_memmove.o ft_memcmp.o ft_memchr.o ft_strdup.o ft_strrchr.o ft_strnstr.o ft_substr.o ft_strjoin.o ft_strtrim.o
+libft.a: ft_isalpha.o ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memset.o ft_strchr.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_tolower.o ft_toupper.o ft_strncmp.o ft_memmove.o ft_memcmp.o ft_memchr.o ft_strdup.o ft_strrchr.o ft_strnstr.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
@@ -336,7 +343,6 @@ ft_lstnew.o:
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 bonus: ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -366,14 +372,6 @@ ft_substr.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-norm:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 45):
-	norminette
-	
 
 # Not a target:
 ft_isalpha.o:
@@ -501,18 +499,19 @@ ft_lstadd_back.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=44/1024=4%, Rehash=0, Collisions=6/100=6%
+# Load=44/1024=4%, Rehash=0, Collisions=6/101=6%
 # VPATH Search Paths
 
 # No `vpath' search paths.
 
 # No general (`VPATH' variable) search path.
 
+ 
 # # of strings in strcache: 1
 # # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Jul 30 00:34:00 2022
+# Finished Make data base on Sat Aug  6 21:24:08 2022
 
  

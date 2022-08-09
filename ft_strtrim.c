@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 20:48:20 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/08/09 02:02:52 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/08/10 01:05:44 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,17 +34,10 @@ size_t	last(const char *s1, const char *set)
 	return (finish);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*m_des(size_t size, char *dest, char const *s1, size_t first)
 {
-	size_t	first;
-	size_t	finish;
-	size_t	size;
 	size_t	i;
-	char	*dest;
 
-	first = front(s1, set);
-	finish = last(s1, set);
-	size = finish - first + 1;
 	i = 0;
 	if (size == 1)
 	{
@@ -55,15 +48,36 @@ char	*ft_strtrim(char const *s1, char const *set)
 	else
 	{
 		dest = malloc(sizeof(char) * (size + 1));
+		if (!dest)
+			return (NULL);
 		while (i < size)
 			dest[i++] = s1[first++];
 	}
-	dest[i] = '\0';
+	return (dest);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	first;
+	size_t	finish;
+	size_t	size;
+	char	*dest;
+
+	if (!s1 || !set)
+		return (0);
+	dest = NULL;
+	first = front(s1, set);
+	finish = last(s1, set);
+	size = finish - first + 1;
+	dest = m_des(size, dest, s1, first);
+	if (!dest)
+		return (NULL);
+	dest[size] = '\0';
 	return (dest);
 }
 
 // int	main(void)
 // {
-// 	char	*s = ft_strtrim("abcdba", "acb");
+// 	char	*s = ft_strtrim("          ", " ");
 // 	printf("%s\n", s);
 // }

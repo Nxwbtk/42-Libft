@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:50:31 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/08/08 11:21:18 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/08/09 23:50:49 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,16 @@ char	*oh_flag(int i, int flag)
 	if (flag == 1)
 	{
 		res = (char *)malloc(sizeof(char) * (i + 2));
+		if (!res)
+			return (NULL);
 		res[0] = '-';
 	}
 	else
+	{
 		res = (char *)malloc(sizeof(char) * (i + 1));
+		if (!res)
+			return (NULL);
+	}
 	return (res);
 }
 
@@ -68,6 +74,8 @@ char	*ft_itoa(int n)
 		return (ft_strdup("-2147483648"));
 	i = find_long(n);
 	res = oh_flag(i, flag);
+	if (!res)
+		return (NULL);
 	if (flag == 1)
 		i++;
 	res[i] = '\0';

@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 03:31:07 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/30 03:32:00 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/08/09 09:05:31 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }

@@ -32,7 +32,7 @@ int	ft_atoi(const char *chnb)
 	}
 	while (chnb[i] >= '0' && chnb[i] <= '9')
 	{
-		result = result * 10 + chnb[i] - '0';
+		result = result * 10 + (chnb[i] - '0');
 		i++;
 	}
 	return (result * count);

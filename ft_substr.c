@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 09:10:21 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/08/07 20:49:03 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/08/10 00:51:37 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*res;
 	char	*sc;
 
+	if (!s)
+		return (0);
 	s_len = ft_strlen(s);
 	if (len == 0 || (start + 1 > s_len))
 		return (ft_strdup("\0"));

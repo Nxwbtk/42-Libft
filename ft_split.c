@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:37:42 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/08/08 23:23:50 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/08/10 00:54:21 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,8 @@ char	**ft_split(char const *s, char c)
 	char	**split;
 	int		i;
 
+	if (!s)
+		return (0);
 	i = 0;
 	count = word_count(s, c);
 	split = (char **)malloc(sizeof(char *) * (count + 1));

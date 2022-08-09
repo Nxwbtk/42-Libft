@@ -6,7 +6,7 @@
 #    By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/05 23:11:56 by bsirikam          #+#    #+#              #
-#    Updated: 2022/08/08 21:42:33 by bsirikam         ###   ########.fr        #
+#    Updated: 2022/08/09 09:05:58 by bsirikam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c \
 ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 
 SRC_B = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c \
+ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
 
 OBJ = $(SRC:.c=.o)
 OBJ_B = $(SRC_B:.c=.o)

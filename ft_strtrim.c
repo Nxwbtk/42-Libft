@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 20:48:20 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/07/26 14:17:55 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/08/09 02:02:52 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,3 +61,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	dest[i] = '\0';
 	return (dest);
 }
+
+// int	main(void)
+// {
+// 	char	*s = ft_strtrim("abcdba", "acb");
+// 	printf("%s\n", s);
+// }

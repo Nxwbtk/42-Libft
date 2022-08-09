@@ -10,21 +10,21 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `ft_isalpha.o', needed by `libft.a'.  Stop.
 
 
-# Make data base, printed on Sat Aug  6 21:24:08 2022
+# Make data base, printed on Mon Aug  8 21:42:50 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
- 
-# makefile (from `Makefile', line 24)
+# makefile (from `Makefile', line 25)
 OBJ = $(SRC:.c=.o)
 # makefile (from `Makefile', line 15)
-SRC = ft_isalpha.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_tolower.c ft_toupper.c ft_strncmp.c ft_memmove.c ft_memcmp.c ft_memchr.c ft_strdup.c ft_strrchr.c ft_strnstr.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c
+SRC = ft_isalpha.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_tolower.c ft_toupper.c ft_strncmp.c ft_memmove.c ft_memcmp.c ft_memchr.c ft_strdup.c ft_strrchr.c ft_strnstr.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
 # environment
 LC_CTYPE = UTF-8
 # environment
@@ -43,7 +43,7 @@ SHELL = /bin/sh
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
-# makefile (from `Makefile', line 27)
+# makefile (from `Makefile', line 28)
 CFLAGS = -Wall -Werror -Wextra
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
@@ -54,7 +54,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/kp/c7d0j08n3mjgyphnqsw6dkrr0000gn/T/vscode-ipc-07b2b033-c46e-4cca-bd99-9bac5ef5637a.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/kp/c7d0j08n3mjgyphnqsw6dkrr0000gn/T/vscode-ipc-04ba8d1b-8a71-45de-ab9f-9b8ead48a708.sock
 # environment
 VSCODE_CWD = /Users/buntakansirikamonthip/42Cursus/Libft
 # environment
@@ -71,13 +71,14 @@ ELECTRON_RUN_AS_NODE = 1
 SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.2ZwUIeWWVA/Listeners
 # automatic
 %F = $(notdir $%)
-# makefile (from `Makefile', line 21)
+# makefile (from `Makefile', line 22)
 SRC_B = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c 
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
 PWD = /Users/buntakansirikamonthip/42Cursus/Libft
 # environment
+ 
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
@@ -111,7 +112,7 @@ MAKE = $(MAKE_COMMAND)
 LC_TERMINAL = iTerm2
 # environment
 SHLVL = 3
-# makefile (from `Makefile', line 26)
+# makefile (from `Makefile', line 27)
 CC = gcc
 # default
 MAKE_VERSION := 3.81
@@ -120,10 +121,9 @@ USER = buntakansirikamonthip
 # makefile
 .DEFAULT_GOAL := all
 # default
- 
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t0p0:EE05811B-B4B6-4DA7-B1EF-E887C6020380
+TERM_SESSION_ID = w0t0p0:CBE7CBD2-8251-4294-82D4-2369F79ED350
 # makefile (from `Makefile', line 13)
 NAME = libft.a
 # automatic
@@ -149,19 +149,19 @@ MFLAGS = -Rrqp
 # environment
 TERM_PROGRAM_VERSION = 3.4.16
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.691651.691657.894CC8D1-DF4D-4080-91EA-CA8860B63831
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.691651.691657.09D1CFB4-0139-489C-A9A2-63B33B049163
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# makefile (from `Makefile', line 25)
+# makefile (from `Makefile', line 26)
 OBJ_B = $(SRC_B:.c=.o)
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t0p0:EE05811B-B4B6-4DA7-B1EF-E887C6020380
+ITERM_SESSION_ID = w0t0p0:CBE7CBD2-8251-4294-82D4-2369F79ED350
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -169,6 +169,7 @@ COLORFGBG = 7;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
+ 
 COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
@@ -178,7 +179,7 @@ MAKEFILES :=
 ITERM_PROFILE = Default
 # environment
 LC_ALL = C
-# makefile (from `Makefile', line 28)
+# makefile (from `Makefile', line 29)
 HEADER = libft.h
 # environment
 SECURITYSESSIONID = 186b2
@@ -203,9 +204,9 @@ VSCODE_PID = 1069
 
 # Directories
 
-# . (device 16777234, inode 694719): 48 files, no impossibilities.
+# . (device 16777234, inode 694719): 56 files, no impossibilities.
 
-# 48 files, no impossibilities in 1 directories.
+# 56 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -214,7 +215,19 @@ VSCODE_PID = 1069
 # Files
 
 # Not a target:
+ft_strmapi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 ft_memcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_itoa.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -258,7 +271,6 @@ ft_memchr.o:
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 .PHONY: clean fclean re all bonus
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -309,10 +321,11 @@ ft_strlcat.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-06 21:23:32
+#  Last modified 2022-08-08 21:42:33
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
@@ -321,15 +334,21 @@ ft_isprint.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-libft.a: ft_isalpha.o ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memset.o ft_strchr.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_tolower.o ft_toupper.o ft_strncmp.o ft_memmove.o ft_memcmp.o ft_memchr.o ft_strdup.o ft_strrchr.o ft_strnstr.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o
+libft.a: ft_isalpha.o ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memset.o ft_strchr.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_tolower.o ft_toupper.o ft_strncmp.o ft_memmove.o ft_memcmp.o ft_memchr.o ft_strdup.o ft_strrchr.o ft_strnstr.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 33):
+#  commands to execute (from `Makefile', line 34):
 	@ar rcs $(NAME) $(OBJ)
 	
+
+# Not a target:
+ft_striteri.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 ft_bzero.o:
@@ -348,16 +367,22 @@ bonus: ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o 
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 36):
+#  commands to execute (from `Makefile', line 37):
 	@ar rcs $(NAME) $(OBJ_B)
 	
+
+# Not a target:
+ft_putnbr_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 42):
+#  commands to execute (from `Makefile', line 43):
 	@rm -f $(NAME)
 	
 
@@ -416,7 +441,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 39):
+#  commands to execute (from `Makefile', line 40):
 	@rm -f $(OBJ) $(OBJ_B)
 	
 
@@ -467,6 +492,7 @@ ft_toupper.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 # Not a target:
 ft_strnstr.o:
@@ -475,7 +501,19 @@ ft_strnstr.o:
 #  File has not been updated.
 
 # Not a target:
+ft_putstr_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 ft_memset.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_putchar_fd.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -498,20 +536,25 @@ ft_lstadd_back.o:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+ft_putendl_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=44/1024=4%, Rehash=0, Collisions=6/101=6%
+# Load=51/1024=5%, Rehash=0, Collisions=6/115=5%
 # VPATH Search Paths
 
 # No `vpath' search paths.
 
 # No general (`VPATH' variable) search path.
 
- 
 # # of strings in strcache: 1
 # # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Aug  6 21:24:08 2022
+# Finished Make data base on Mon Aug  8 21:42:50 2022
 
  

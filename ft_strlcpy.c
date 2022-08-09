@@ -11,22 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
 size_t	ft_strlcpy(char *dest, char *src, size_t n)
 {
 	size_t	i;
 	size_t	s_len;
 
-	i = 0;
 	s_len = ft_strlen(src);
 	if (n == 0)
 		return (s_len);
-	if (!*dest || !*src)
-	{
-		dest[0] = '\0';
-		return (0);
-	}
-	while (i < n - 1 && src[i] != '\0')
+	i = 0;
+	while (i < n - 1 && src[i])
 	{
 		dest[i] = src[i];
 		i++;
@@ -34,3 +30,12 @@ size_t	ft_strlcpy(char *dest, char *src, size_t n)
 	dest[i] = '\0';
 	return (s_len);
 }
+
+// int	main(void)
+// {
+// 	char src[] = "coucou";
+// 	char dest[10]; memset(dest, 'A', 10);
+// 	printf("%lu\n", strlen(src));
+// 	printf("%zu\n", ft_strlcpy(dest, src, 2));
+// 	printf("%c\n", dest[2]);
+// }

@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:50:31 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/08/07 22:01:10 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/08/08 11:21:18 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,39 +25,52 @@ int	find_long(int n)
 	return (count);
 }
 
-char	*ft_itoa(int n)
+char	*oh_flag(int i, int flag)
 {
 	char	*res;
-	int		nlong;
-	int		i;
 
-	if (n < 0)
-		n = -n;
-	nlong = find_long(n);
-	i = 0;
-	res = (char *)malloc(sizeof(char) * (nlong + 1));
-	while (n > 0 && i < nlong)
+	if (flag == 1)
 	{
-		res[i] = '0' + (n % 10);
-		n = n / 10;
-		i++;
+		res = (char *)malloc(sizeof(char) * (i + 2));
+		res[0] = '-';
 	}
-	res[i] = '\0';
-	// printf("%d\n", nlong);
+	else
+		res = (char *)malloc(sizeof(char) * (i + 1));
 	return (res);
 }
 
-int	main(void)
+char	*let_to_a(int n, int i, char *res)
 {
-	// int	i;
-	// int	a = 100000;
+	while (n > 0 && i > 0)
+	{
+		res[i - 1] = '0' + (n % 10);
+		n = n / 10;
+		i--;
+	}
+	return (res);
+}
 
-	// i = 0;
-	// while (a > 0)
-	// {
-	// 	a = a / 10;
-	// 	i++;
-	// }
-	// printf("%d", i);
-	printf("|%s|\n", ft_itoa(300));
+char	*ft_itoa(int n)
+{
+	char	*res;
+	int		i;
+	int		flag;
+
+	flag = 0;
+	if (n < 0)
+	{
+		n = -n;
+		flag = 1;
+	}
+	if (n == 0)
+		return (ft_strdup("0"));
+	else if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	i = find_long(n);
+	res = oh_flag(i, flag);
+	if (flag == 1)
+		i++;
+	res[i] = '\0';
+	res = let_to_a(n, i, res);
+	return (res);
 }

@@ -6,15 +6,13 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 17:12:17 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/06/04 02:48:23 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/08/10 17:39:22 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stddef.h>
 # include <stdlib.h>
-# include <stdio.h>
 # include <unistd.h>
 
 void	ft_bzero(void *s, size_t n);

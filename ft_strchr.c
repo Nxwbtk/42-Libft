@@ -26,9 +26,7 @@ char	*ft_strchr(const char *s, int c)
 	while (*src)
 	{
 		if (*src == cc)
-		{
 			return (src);
-		}
 		src++;
 	}
 	return (NULL);

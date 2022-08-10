@@ -14,16 +14,22 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	ssize_t			s_len;
-	unsigned char	ch;
+	int	s_len;
 
-	s_len = ft_strlen(s);
-	ch = (unsigned char)c;
+	s_len = 0;
+	while (s[s_len])
+		s_len++;
+	c = (unsigned char)c;
 	while (s_len >= 0)
 	{
-		if (s[s_len] == ch)
-			return (((char *)&s[s_len]));
+		if (s[s_len] == c)
+			return ((char *)&s[s_len]);
 		s_len--;
 	}
 	return (0);
 }
+
+// int	main(void)
+// {
+// 	printf("%s\n", ft_strrchr("123456789", 'a'));
+// }

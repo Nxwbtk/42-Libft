@@ -6,7 +6,7 @@
 /*   By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 20:48:20 by bsirikam          #+#    #+#             */
-/*   Updated: 2022/08/10 17:35:43 by bsirikam         ###   ########.fr       */
+/*   Updated: 2022/08/10 22:48:19 by bsirikam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ size_t	front(const char *s1, const char *set)
 	begin = 0;
 	while (s1[begin] && ft_strrchr(set, s1[begin]))
 		begin++;
-	if (begin == ft_strlen(s1))
-		begin = 0;
 	return (begin);
 }
 
@@ -39,20 +37,11 @@ char	*m_des(size_t size, char *dest, char const *s1, size_t first)
 	size_t	i;
 
 	i = 0;
-	if (size == 1)
-	{
-		dest = malloc(sizeof(char) * size);
-		if (!dest)
-			return (NULL);
-	}
-	else
-	{
-		dest = malloc(sizeof(char) * (size + 1));
-		if (!dest)
-			return (NULL);
-		while (i < size)
-			dest[i++] = s1[first++];
-	}
+	dest = malloc(sizeof(char) * (size + 1));
+	if (!dest)
+		return (NULL);
+	while (i < size)
+		dest[i++] = s1[first++];
 	return (dest);
 }
 
@@ -68,14 +57,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	dest = NULL;
 	first = front(s1, set);
 	finish = last(s1, set);
+	if (first > finish || (finish == 0 && first == 0))
+	{
+		dest = malloc(1);
+		if (!dest)
+			return (0);
+		dest[0] = 0;
+		return (dest);
+	}
 	size = finish - first + 1;
 	dest = m_des(size, dest, s1, first);
 	if (!dest)
 		return (NULL);
-	if (size == 1)
-		dest[0] = '\0';
-	else
-		dest[size] = '\0';
+	dest[size] = '\0';
 	return (dest);
 }
 

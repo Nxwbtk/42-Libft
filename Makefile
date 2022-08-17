@@ -6,7 +6,7 @@
 #    By: bsirikam <bsirikam@student.42bangkok.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/05 23:11:56 by bsirikam          #+#    #+#              #
-#    Updated: 2022/08/10 17:26:06 by bsirikam         ###   ########.fr        #
+#    Updated: 2022/08/17 18:45:00 by bsirikam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,17 +31,17 @@ HEADER = libft.h
 all: $(NAME)
 
 $(NAME): $(OBJ) $(HEADER)
-	ar rcs $(NAME) $(OBJ)
+	@ar rcs $(NAME) $(OBJ)
 
 bonus: all
 	$(CC) $(CFLAGS) -c $(SRC_B)
-	ar rcs $(NAME) $(OBJ_B)
+	@ar rcs $(NAME) $(OBJ_B)
 
 clean:
-	rm -f $(OBJ) $(OBJ_B)
+	@rm -f $(OBJ) $(OBJ_B)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all bonus
 
